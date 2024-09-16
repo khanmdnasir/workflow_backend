@@ -1,0 +1,8 @@
+Django
+djangorestframework
+python-dotenv
+django-cors-headers
+django-allauth
+pymongo
+pydantic
+certifi
