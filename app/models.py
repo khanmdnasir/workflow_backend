@@ -1,3 +1,13 @@
-from django.db import models
+# models/user.py
 
-# Create your models here.
+from pydantic import BaseModel, Field
+
+
+class DocumentModel(BaseModel):
+    nodes: str
+    edges: str
+    name: str
+    user_id: int
+
+    class Config:
+        from_attributes = True
